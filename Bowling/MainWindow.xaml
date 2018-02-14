@@ -1,0 +1,96 @@
+﻿<Window x:Class="Bowling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bowling"
+        mc:Ignorable="d"
+        Title="Kręgle" 
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        FontSize="22">
+    <Border Background="MediumSlateBlue" BorderBrush="Gold" BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Runda 1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 3" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 4" Grid.Column="6" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 5" Grid.Column="8" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 6" Grid.Column="10" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 7" Grid.Column="12" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 8" Grid.Column="14" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 9" Grid.Column="16" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Runda 10" Grid.Column="18" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="Suma" Grid.Column="20" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+            
+            <Label Content="{Binding .[0].FirstThrow}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[0].SecondThrow}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[1].FirstThrow}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[1].SecondThrow}" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[2].FirstThrow}" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[2].SecondThrow}" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[3].FirstThrow}" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[3].SecondThrow}" Grid.Column="7" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[4].FirstThrow}" Grid.Column="8" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[4].SecondThrow}" Grid.Column="9" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[5].FirstThrow}" Grid.Column="10" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[5].SecondThrow}" Grid.Column="11" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[6].FirstThrow}" Grid.Column="12" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[6].SecondThrow}" Grid.Column="13" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[7].FirstThrow}" Grid.Column="14" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[7].SecondThrow}" Grid.Column="15" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[8].FirstThrow}" Grid.Column="16" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[8].SecondThrow}" Grid.Column="17" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[9].FirstThrow}" Grid.Column="18" Grid.Row="1" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[9].SecondThrow}" Grid.Column="19" Grid.Row="1" HorizontalAlignment="Center"/>
+
+            <Label Content="{Binding .[0].RoundPoints}" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[1].RoundPoints}" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[2].RoundPoints}" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[3].RoundPoints}" Grid.Column="6" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[4].RoundPoints}" Grid.Column="8" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[5].RoundPoints}" Grid.Column="10" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[6].RoundPoints}" Grid.Column="12" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[7].RoundPoints}" Grid.Column="14" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[8].RoundPoints}" Grid.Column="16" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Label Content="{Binding .[9].RoundPoints}" Grid.Column="18" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <!--<Label Content="{Binding .[10].RoundPoints}" Grid.Column="20" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>-->
+
+            <Label x:Name="LabelSum" Grid.Column="20" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Center"/>
+
+            <Button x:Name="BtnThrow" Content="Rzuć kulę" Grid.Row="3" Grid.ColumnSpan="22" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" Margin="10" Click="BtnThrow_Click"/>
+           
+        </Grid>
+    </Border>
+</Window>
